@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PizarriaGio</title>
+</head>
+
+<body>
+    <header>
+        <h3>PizzaGio</h3>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Cardapio</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+        <button>Pedir Agora</button>
+    </header>
+
+    <section id="Inicio" class="inicio">
+        <div class="section-container">
+            <h2>Bem-vindo à Pizzaria que Eleva Seu Sabor</h2>
+            <p>A PizzariaGio é uma pizzaria que se destaca por oferecer uma variedade de sabores únicos e autênticos
+            </p>
+            <div class="btn-button">
+                <a href="#" class="btn">Pedir Agora</a>
+                <a href="#" class="btn btn-outline">WhatsApp</a>
+            </div>
+            <div class="linha">
+                <ul>
+                    <li>Sabores exclusivos toda semana</li>
+                    <li>Entrega rápida e segura</li>
+                    <li>Combos irresistíveis para compartilhar</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="cardapio" id="cardapio">
+        <h2>Cardápio</h2>
+        <div class="cardapio-container">
+            <div class="cardapio-item">
+                <img src="img/pizza1.jpeg" alt="Pizza 1">
+                <h3>Calabresa</h3>
+                <span>Mais Vendido</span>
+                <p>Calabresa fatiada, cebola roxa e toque de orégano. Sabor clássico, marcante e sempre pedida.</p>
+                <button>Pedir Agora</button>
+            </div>
+            <div class="cardapio-item">
+                <img src="img/pizza2.jpeg" alt="Pizza 2">
+                <h3>Nutella</h3>
+                <span>Mais Vendido</span>
+                <p>Coberta com uma camada generosa de Nutella cremosa e finalizada com frutas frescas. Doce,
+                    irresistível e perfeita para qualquer hora.</p>
+                <button>Pedir Agora</button>
+            </div>
+            <div class="cardapio-item">
+                <img src="img/pizza3.jpeg" alt="Pizza 3">
+                <h3>Quatro Queijos</h3>
+                <span>Mais Vendido</span>
+                <p>Mistura cremosa de muçarela, parmesão, provolone e gorgonzola. Explosão de sabor e muita cremosidade.
+                </p>
+                <button>Pedir Agora</button>
+            </div>
+        </div>
+        <a href="cardapio.html" target="_blank">Ver Mais</a>
+    </section>
+
+    <section class="sobre" id="sobre">
+        <img src="img/sobre.jpg" alt="sobre">
+        <div class="sobre-container">
+            <h2>Nossa História</h2>
+            <h4>Uma Pizzaria Feita Para Quem Ama Sabor de Verdade</h4>
+            <p><strong>Nossa história começou com um forno simples, uma receita de família e um objetivo:</strong>criar
+                pizzas que entregassem mais do que comida, mas um momento inesquecível</p>
+            <p><strong>Com anos de tradição, evoluímos, modernizamos a cozinha e ampliamos o cardápio — sem perder o que
+                    nos torna únicos:</strong>massa artesanal feita diariamente e ingredientes de alta qualidade</p>
+            <p><strong>Hoje, somos referência na região e servimos centenas de pizzas por semana, sempre com o mesmo
+                    compromisso:</strong>sabor, cuidado e aquela experiência que deixa vontade de voltar</p>
+        </div>
+    </section>
+
+    <section class="contato" id="contato">
+        <div class="contato-container">
+            <h2>Contato</h2>
+            <h3>Fale Conosco</h3>
+            <p><strong>Endereço:</strong> Rua da Pizzaria, 123, Cidade Saborosa</p>
+            <p><strong>Telefone:</strong> (11) 1234-5678</p>
+            <p><strong>Email:</strong> 6V6mM@example.com</p>
+            <p><strong>Horario de Funcionamento:</strong> Segunda a Sexta, 11h às 21h</p>
+            <p><strong>WhatsApp:</strong> (11) 1234-5678</p>
+        </div>
+
+        <div class="pizza-form-container">
+
+            <form class="pizza-form" onsubmit="enviar(event)">
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" placeholder="Seu nome completo" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Telefone:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="(XX) XXXXX-XXXX">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" rows="5"
+                        placeholder="Sua mensagem ou pedido especial"></textarea>
+                </div>
+
+                <button type="submit" class="submit-button">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+    
+        <p>&copy; 2023 PizzariaGio. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
